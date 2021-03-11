@@ -9,6 +9,10 @@ public class Pilha {
 	public Pilha(int n) {
 		this.data = new Produtos[n];
 	}
+	
+	public Pilha() {
+		
+	}
 
 	//Adiciona na pilha principal
 	public void push(Produtos qualquer) {
@@ -57,10 +61,10 @@ public class Pilha {
 	//Verifica se esta vazia.
 	 public boolean verificarPilha() {
 		 int len = data.length;
-		 System.out.println(len);
+		 //System.out.println(len);
 		 int aux = 0;
 		 
-		 for(int i = 0; i< len; i++) {
+		 for(int i = 0; i< topo; i++) {
 			 if(data[i] == null) {
 				 aux++;
 			 }
@@ -68,10 +72,10 @@ public class Pilha {
 				 i = len;
 			 }
 		 }
-		 if(aux == len) {
-			 return true;
-		 }else {
+		 if(aux == topo) {
 			 return false;
+		 }else {
+			 return true;
 		 }
 	 }
 	 

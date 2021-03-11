@@ -10,7 +10,7 @@ public class Main {
 		
 		
 		// ---*---
-		Pilha op = new Pilha(1);
+		Pilha op = new Pilha();
 		Produtos produto;
 		Produtos removido; // Elemento removido da pilha
 
@@ -45,7 +45,7 @@ public class Main {
 			break;
 			
 			case 3: auxbool = data.verificarPilha();												//Verifica se a pilha esta vazia
-				if(auxbool == true) {
+				if(auxbool == false) {
 				System.out.println("Pilha vazia");
 				}else {
 				System.out.println("Pilha não está vazia");

@@ -81,11 +81,13 @@ public class Pilha {
 	 
 	 //Pesquisa a ordem do produto na pilha.
 	 public void pesquisarOrdem( int posicao) {
-		 for(int i = 0; i< topo; i++) {
+		 int contador = 1;
+		 for(int i = (topo-1); i>=0; i--) {
 			 if(data[i].getId() == posicao) {
 				 System.out.println("O produto com nome " +data[i].getNome() + " está na "
-				 		+ "posição " +(i+1) + " da ordem.");
+				 		+ "posição " +(contador) + " da ordem.");
 			 }
+			 contador++;
 		 }
 	 }
 	 
